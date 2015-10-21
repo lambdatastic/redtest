@@ -84,7 +84,7 @@ var testTemplate = function(test) {
       [R.equals('running'), R.always('Running')],
       [R.equals(true), R.always('Passed')],
       [R.equals(false), R.always('Failed')]
-    ], test.stream()))
+    ])(test.stream()))
   ]);
 };
       
@@ -93,6 +93,12 @@ Tester.view = function(ctrl) {
   return m('div', [
     m('table.status', [
       //still need ti insert the button here to call ctrl.startTests
+      m('tr', [
+        m('td', [
+          m('button', {onclick: ctrl.startTests}, 'Start Tests')
+        ]),
+        m('td', ctrl.atom.complete ? 'COMPLETED!' : '') 
+      ]),
       m('tr', [
         m('td', 'Running:'),
         m('td', ctrl.atom.running) // I feel like I'm two findAlls away from this being a React template o_o;
