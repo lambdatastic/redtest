@@ -4,7 +4,8 @@
   "description": "Basic in browser test runner",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -o src/bundle.js src/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/lambdatastic/redtest/issues"
   },
-  "homepage": "https://github.com/lambdatastic/redtest#readme"
+  "homepage": "https://github.com/lambdatastic/redtest#readme",
+  "dependencies": {
+    "flyd": "^0.1.15",
+    "mithril": "^0.2.0",
+    "ramda": "^0.18.0"
+  }
 }
