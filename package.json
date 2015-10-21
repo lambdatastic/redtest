@@ -1,0 +1,19 @@
+{
+  "name": "redtest",
+  "version": "1.0.0",
+  "description": "Basic in browser test runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambdatastic/redtest.git"
+  },
+  "author": "Cassandra Cruz <celkamada@gmail.com> (http://alicekamada.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lambdatastic/redtest/issues"
+  },
+  "homepage": "https://github.com/lambdatastic/redtest#readme"
+}
